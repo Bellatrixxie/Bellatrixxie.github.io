@@ -7,53 +7,60 @@
     <meta name="description" content="This is a wonderful web page" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="profileStyle.css" rel="stylesheet" />
+    <style>
+        li{
+            background-color: #eee;
+            color: #92d;
+        }
+        </style>
     <title>My Profile</title>
 </head>
-<body>
-    <nav>
-        <a href="index.html">Go to profile</a>
-        <a href="projects.html">Go to projects</a>
-        <a href="https://www.linkedin.com/in/laura-tozer-013536b6/" target="_blank">My LinkedIn</a>
-    </nav>
-    <header>
-        <img alt="My picture" src="my-profile-pic.jpg" width="200px">
-        <h1>Laura Tozer</h1>
-        <h2>My Profile</h2>
-        <p>An <em>awesome</em> and <strong>amazing</strong> website demonstration</p>
-    </header>
-    <section>
-        <h4>My Skills</h4>
-        <p>Agile, Scrum, <span>Kanban</span> and similar methodologies</p>
-        <p>Cooking up sweet code</p>
-    </section>
-    <section>
-        <h4>Hobbies</h4>
-        <ul>
-            <li>Learning languages</li>
-            <li>Hiking</li>
-            <li>Astronomy</li>
-        </ul>
-    </section>
-    <section>
-        <h4>Goals</h4>
-        <ol>
-            <li>Become a great Spartan</li>
-            <li>Get taken on permanently</li>
-            <li>Become a tech guru with a house in Malibu</li>
-        </ol>
-    </section>
-    <section>
-        <h3>Search for News</h3>
-        <form action="https://www.bbc.co.uk/search">
-            <label for="mysearch">Search for:</label>
-            <input id="mysearch" name="q" type="text" value="Birmingham">
-            <input class="button" type="submit" value="Submit">
-            <textarea></textarea>
-        
-        </form>
-    </section>
-    <footer>
-        <small>Copyright &#169; Sparta Global 2023 <cite>L. Tozer</cite></small>
-    </footer>
+<body class="container">
+    <main>
+        <nav class="flex-container">
+            <a href="index.html">Go to profile</a>
+            <a href="projects.html">Go to projects</a>
+            <a href="https://www.linkedin.com/in/laura-tozer-013536b6/" target="_blank">My LinkedIn</a>
+        </nav>
+        <header>
+            <img alt="My picture" src="my-profile-pic.jpg" width="200px">
+            <h1>Laura Tozer</h1>
+            <h2>My Profile</h2>
+            <p>An <em>awesome</em> and <strong>amazing</strong> website demonstration</p>
+        </header>
+        <section class="box-1">
+            <h4>My Skills</h4>
+            <p>Agile, Scrum, <span>Kanban</span> and similar methodologies</p>
+            <p>Cooking up sweet code</p>
+        </section>
+        <section id="hobbies" class="box-2">
+            <h4>Hobbies</h4>
+            <ul>
+                <li>Learning languages</li>
+                <li style="color:rgb(30, 255, 64);">Hiking</li>
+                <li id="astronomy">Astronomy</li>
+            </ul>
+        </section>
+        <section>
+            <h4>Goals</h4>
+            <ol>
+                <li>Become a great Spartan</li>
+                <li>Get taken on permanently</li>
+                <li>Become a tech guru with a house in Malibu</li>
+            </ol>
+        </section>
+        <section>
+            <h3>Search for News</h3>
+            <form action="https://www.bbc.co.uk/search">
+                <label for="mysearch">Search for:</label>
+                <input id="mysearch" name="q" type="text" value="Birmingham">
+                <input class="button" type="submit" value="Submit">
+            </form>
+        </section>
+        <footer>
+            <small>Copyright &#169; Sparta Global 2023 <cite>L. Tozer</cite></small>
+        </footer>
+    </main>
+    
 </body>
 </html>
